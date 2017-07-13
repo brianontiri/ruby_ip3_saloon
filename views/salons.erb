@@ -6,7 +6,7 @@
     <ul>
       <% @salons.each() do |salon| %>
         <li><a href="/salons/<%= salon.id()%>"><%= salon.name() %></a> </li>
-        <p><a href="/salons/<%= salon.id() %>/edit"><button class="button btn-danger"> Edit <%= salon.name() %> salon</button></a></p>
+        <p><a href="/salons/<%= salon.id() %>/edit"><button class="button btn-info"> Edit <%= salon.name() %> salon</button></a></p>
       <% end %>
     </ul>
 
