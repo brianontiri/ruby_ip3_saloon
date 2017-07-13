@@ -1,0 +1,19 @@
+<h1>Choose A Salonist and assign a Client</h1>
+
+  <form action="/clients" method="post">
+    <label for="salon_id">Select a List</label>
+    <select id='salon_id' name='salon_id' type='text'>
+      <% @salons.each() do |salon| %>
+        <option value="<%= salon.id()%>"> <%= salon.name() %> </option>
+      <% end %>
+    </select>
+
+    <label for="name">Client:</label>
+    <input id="namen" name="name" type="text">
+
+    <button  class="button btn-primary"type="submit">Add Client</button>
+  </form>
+
+  <hr>
+
+<a href="/"><button class="button btn-info"> Home</button></a>

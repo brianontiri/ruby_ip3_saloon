@@ -1,0 +1,39 @@
+.btn-success {
+  margin-left: 40%;
+}
+
+body {
+  background: url("https://static.pexels.com/photos/4614/woman-morning-bathrobe-bathroom.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/*
+.dictionary {
+  background: url("https://static.pexels.com/photos/5156/people-eiffel-tower-lights-night.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}*/
+
+/*
+
+.wordform {
+  background: url("https://static.pexels.com/photos/5156/people-eiffel-tower-lights-night.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+
+footer {
+  text-align: center;
+  color:black;
+}

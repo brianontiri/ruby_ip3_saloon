@@ -1,0 +1,23 @@
+<h1>Salonists</h1>
+
+<hr>
+
+  <% if @salons.any?() %>
+    <ul>
+      <% @salons.each() do |salon| %>
+        <li><a href="/salons/<%= salon.id()%>"><%= salon.name() %></a> </li>
+        <p><a href="/salons/<%= salon.id() %>/edit"><button class="button btn-danger"> Edit <%= salon.name() %> salon</button></a></p>
+      <% end %>
+    </ul>
+
+  <% else %>
+
+      <p>There are no salons yet!</p>
+
+  <% end %>
+
+  <hr>
+
+  <a href="/"><button class="button btn-info"> Home</button></a>
+  <a href="/salons/new"><button class="button btn-success">Add New Salonist without task</button></a>
+  <a href="/add"><button class="button btn-info">Add a task to existing salon</button></a>

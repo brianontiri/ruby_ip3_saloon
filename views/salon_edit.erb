@@ -1,0 +1,16 @@
+<h1>Update <%=@salon.name() %> </h1>
+
+
+  <form action="/salons/<%= @salon.id() %>" method="post">
+    <input name="_method" type="hidden" value="patch">
+    <label for="name">Rename <%=@salon.name() %>:</label>
+    <input id="name" name="name" type="text">
+
+    <button  class="button btn-success"type="submit">Update</button>
+  </form>
+
+  <form action="/salons/<%= @salon.id() %>" method="post">
+    <input name="_method" type="hidden" value="delete">
+
+    <button   class="button btn-info" type="submit">Delete Salonist</button>
+  </form>
